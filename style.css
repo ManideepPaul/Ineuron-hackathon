@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: 300ms ease-in;
+}
+
+
+/*********************** Navbar Section***********************/
+
+.navbar {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #243C7B;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 140px;
+    height: 40px;
+}
+
+.search {
+    border: 2px solid #243C7B;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    padding: 6px 10px;
+    width: 250px;
+    position: relative;
+    border: none;
+    outline: none;
+}
+
+input::placeholder {
+    color: #243C7B;
+}
+
+.search-icon {
+    padding: 6px 20px;
+}
+
+.drop-down {
+    display: flex;
+    align-self: flex-start;
+    gap: 40px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #243C7B;
+    margin-left: 20px;
+}
+
+.links > a + a {
+    border: 2px solid #243C7B;
+    padding: 6px 15px;
+}
+
+.links > a + a:hover {
+    background-color: #243C7B;
+    color: #ffffff;
+}
