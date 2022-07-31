@@ -8,6 +8,10 @@
     transition: 300ms ease-in;
 }
 
+body {
+    background-color: #d7d7d7;
+}
+
 
 /*********************** Navbar Section***********************/
 
@@ -37,6 +41,7 @@ input {
     position: relative;
     border: none;
     outline: none;
+    background-color: #d7d7d7;
 }
 
 input::placeholder {
@@ -66,6 +71,39 @@ a {
 }
 
 .links > a + a:hover {
-    background-color: #243C7B;
+    background-color: #dd4e27;
     color: #ffffff;
+    border-color: #dd4e27;
+}
+
+/*********************** Hero Section***********************/
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: url(./assets/wave.svg) no-repeat center center / cover;
+    color: rgba(221, 78, 39, .9);
+    box-sizing: border-box;
+}
+
+.text h4 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.text h1 {
+    font-size: 52px ;
+    margin: 30px 0;
+    font-weight: 600;
+}
+
+.text p {
+    color: #ffffff99;
+    font-size: 20px;
+}
+
+.hero-section > img {
+    width: 30%;
 }
