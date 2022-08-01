@@ -79,13 +79,17 @@ a {
 /*********************** Hero Section***********************/
 
 .hero-section {
+    background: url(./assets/wave.svg) no-repeat center center / cover;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
-    background: url(./assets/wave.svg) no-repeat center center / cover;
-    color: rgba(221, 78, 39, .9);
-    box-sizing: border-box;
+    background-image: linear-gradient(to right top, #243c7b99, #d7d7d799);
 }
 
 .text h4 {
@@ -100,10 +104,10 @@ a {
 }
 
 .text p {
-    color: #ffffff99;
-    font-size: 20px;
+    color: rgba(221, 78, 39, 0.9);
+    font-size: 22px;
 }
 
-.hero-section > img {
+.hero-section  img {
     width: 30%;
 }
