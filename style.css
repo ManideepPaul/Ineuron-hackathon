@@ -12,6 +12,10 @@ body {
     background-color: #d7d7d7;
 }
 
+.hidden {
+    /* visibility: hidden; */
+}
+
 
 /*********************** Navbar Section***********************/
 
@@ -22,6 +26,7 @@ body {
     align-items: center;
     color: #243C7B;
     box-sizing: border-box;
+    height: 10vh;
 }
 
 .logo {
@@ -59,7 +64,7 @@ input::placeholder {
     cursor: pointer;
 }
 
-a {
+.links a {
     text-decoration: none;
     color: #243C7B;
     margin-left: 20px;
@@ -74,6 +79,28 @@ a {
     background-color: #dd4e27;
     color: #ffffff;
     border-color: #dd4e27;
+}
+
+.sub-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    background-color: #d7d7d7;
+    padding: 10px;
+    border-radius: 2px;
+    top: 10vh;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    background-color: #dd4e2788;
+    
+}
+
+.sub-links a {
+    /* display: block; */
+    text-decoration: none;
+    color: #243C7B;
+    color: rgba(255, 255, 255, 0.9)
 }
 
 /*********************** Hero Section***********************/
