@@ -1,187 +1,235 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    transition: 150ms ease-in;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  transition: 150ms ease-in;
 }
 
+html,
 body {
-    background-color: #d7d7d7;
+  background-color: #d7d7d7;
+  position: relative;
 }
 
 .hidden {
-    visibility: hidden;
-    transition: 0;
+  visibility: hidden;
+  transition: 0;
 }
-
 
 /*********************** Navbar Section***********************/
 
 .navbar {
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #243C7B;
-    box-sizing: border-box;
-    height: 10vh;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #243c7b;
+  box-sizing: border-box;
+  height: 10vh;
 }
 
 .logo {
-    width: 140px;
-    height: 40px;
+  width: 140px;
+  height: 40px;
 }
 
 .search {
-    border: 2px solid #243C7B;
-    display: flex;
-    align-items: center;
+  border: 2px solid #243c7b;
+  display: flex;
+  align-items: center;
 }
 
 input {
-    padding: 6px 10px;
-    width: 250px;
-    position: relative;
-    border: none;
-    outline: none;
-    background-color: #d7d7d7;
+  padding: 6px 10px;
+  width: 250px;
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: #d7d7d7;
 }
 
 input::placeholder {
-    color: #243C7B;
+  color: #243c7b;
 }
 
 .search-icon {
-    padding: 6px 20px;
+  padding: 6px 20px;
 }
 
 .drop-down {
-    display: flex;
-    align-self: flex-start;
-    gap: 40px;
-    cursor: pointer;
+  display: flex;
+  align-self: flex-start;
+  gap: 40px;
+  cursor: pointer;
 }
 
 .links a {
-    text-decoration: none;
-    color: #243C7B;
-    margin-left: 20px;
+  text-decoration: none;
+  color: #243c7b;
+  margin-left: 20px;
 }
 
 .links > a + a {
-    border: 2px solid #243C7B;
-    padding: 6px 15px;
+  border: 2px solid #243c7b;
+  padding: 6px 15px;
 }
 
 .links > a + a:hover {
-    background-color: #dd4e27;
-    color: #ffffff;
-    border-color: #dd4e27;
+  background-color: #dd4e27;
+  color: #ffffff;
+  border-color: #dd4e27;
 }
 
 .sub-links {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    position: absolute;
-    background-color: #d7d7d7;
-    padding: 10px;
-    border-radius: 2px;
-    top: 10vh;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;  
-    background-color: #dd4e27;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  background-color: #d7d7d7;
+  padding: 10px;
+  border-radius: 2px;
+  top: 10vh;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-color: #dd4e27;
 }
 
 .sub-links a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /*********************** Hero Section***********************/
 
 .hero-section {
-    background: url(./assets/wave.svg) no-repeat center center / cover;
-    color: #ffffff;
-    box-sizing: border-box;
+  background: url(./assets/wave.svg) no-repeat center center / cover;
+  color: #ffffff;
+  box-sizing: border-box;
 }
 
 .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-    background-image: linear-gradient(to right top, #243c7b99, #d7d7d799);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-image: linear-gradient(to right top, #243c7b99, #d7d7d799);
 }
 
 .text h4 {
-    font-size: 28px;
-    font-weight: 800;
+  font-size: 28px;
+  font-weight: 800;
 }
 
 .text h1 {
-    font-size: 52px ;
-    margin: 30px 0;
-    font-weight: 600;
+  font-size: 52px;
+  margin: 30px 0;
+  font-weight: 600;
 }
 
 .text p {
-    color: rgba(221, 78, 39, 0.9);
-    font-size: 22px;
+  color: rgba(221, 78, 39, 0.9);
+  font-size: 22px;
 }
 
-.hero-section  img {
-    width: 30%;
+.hero-section img {
+  width: 30%;
 }
 
 /*********************** Achivement Section***********************/
 
 .achivement {
-    padding: 100px 40px;
-    text-align: center;
+  padding: 100px 40px;
+  text-align: center;
 }
 
 .achivement h1 {
-    color: #dd4e27;
-    font-size: 52px;
-    margin-bottom: 50px;
+  color: #dd4e27;
+  font-size: 52px;
+  margin-bottom: 80px;
 }
 
 .achivement .cards {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .achivement h3 {
-    font-size: 38px;
-    font-weight: 600;
+  font-size: 38px;
+  font-weight: 600;
+  color: #243c7b;
+  margin: 10px 0;
 }
 
 .achivement h4 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #dd4e27;
+  font-size: 18px;
+  font-weight: 700;
+  color: #dd4e27;
 }
 .card {
-    width: 25%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    height: 350px;
-    border-radius: 100%;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-sizing: border-box;
+  width: 25%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 350px;
+  border-radius: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .card img {
-    width: 90%;
-    padding: 20px;
-    box-sizing: border-box;
-    height: 80%;
+  width: 90%;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 70%;
+}
+
+/*********************** Company Section***********************/
+
+.company-section {
+  padding: 60px 40px;
+  background-color: #243c7b22;
+}
+
+.company-section h1 {
+  text-align: center;
+  color: #dd4e27;
+  font-size: 52px;
+  margin-bottom: 80px;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px !important;
+  height: 100px !important;
+  padding: 10px;
+  display: flex;
+  padding: 20px 20px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right top, #dd4e2799, #d7d7d799);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-pagination {
+  top: 150px;
 }

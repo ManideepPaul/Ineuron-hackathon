@@ -19,3 +19,27 @@ company.addEventListener('mouseover', () => dropDownRem(companySublink))
 company.addEventListener('mouseout', () => dropDownAdd(companySublink))
 programs.addEventListener('mouseover', () => dropDownRem(programsSublink))
 programs.addEventListener('mouseout', () => dropDownAdd(programsSublink))
+
+// Swiper JS 
+
+let swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    spaceBetween: 100,
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+    },
+    coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});

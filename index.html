@@ -1,88 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iNeuron</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
     <div class="main-container">
-        <nav class="navbar">
-            <img src="./assets/ineuron-logo.png" alt="" class="logo">
-            <div class="search">
-                <input type="text" class="search-bar" placeholder="What do you want to learn?">
-                <img src="./assets/search-icon.svg" alt="" class="search-icon">
-            </div>
-            <div class="drop-down">
-                <div class="courses">Courses <img src="./assets/dropdown.svg" alt="">
-                    <div class="sub-links course-sublink hidden">
-                        <a href="#" class="link">Data Science</a>
-                        <a href="#" class="link">Big Data</a>
-                        <a href="#" class="link">Web Devlopment</a>
-                        <a href="#" class="link">Blockchain</a>
-                        <a href="#" class="link">Programming</a>
-                        <a href="#" class="link">Cloud</a>
-                    </div>
-                </div>
-                <div class="company">Company <img src="./assets/dropdown.svg" alt="">
-                    <div class="sub-links company-sublink hidden">
-                        <a href="#" class="link">About Us</a>
-                        <a href="#" class="link">Contact Us</a>
-                        <a href="#" class="link">FAQs</a>
-                        <a href="#" class="link">Hack-A-Thon</a>
-                        <a href="#" class="link">Privacy Policy</a>
-                        <a href="#" class="link">Terms and Conditions</a>
-                    </div>
-                </div>
-                <div class="programs">Programs <img src="./assets/dropdown.svg" alt="">
-                    <div class="sub-links programs-sublink hidden">
-                        <a href="#" class="link">One Neuron</a>
-                        <a href="#" class="link">Job Portal</a>
-                        <a href="#" class="link">Internship Portal</a>
-                        <a href="#" class="link">Become an affiliate</a>
-                        <a href="#" class="link">Hall of fame</a>
-                        <a href="#" class="link">Blog</a>
-                    </div>
-                </div>
-            </div>
-            <div class="links">
-                <a href="#" class="link">Sign In</a>
-                <a href="#" class="link">Get Started</a>
-            </div>
-        </nav>
-        <div class="hero-section">
-            <div class="wrapper">
-                <div class="text">
-                    <h4>Learn from the best of industry</h4>
-                    <h1>Highest in quality, affordable <br> in price</h1>
-                    <p>Digital entrepreneurs, Youtubers and content creators provide <br> affordable courses across technologies.</p>
-                </div>
-                <img src="./assets/herosection.jpg" alt="">
-            </div>
+      <nav class="navbar">
+        <img src="./assets/ineuron-logo.png" alt="" class="logo" />
+        <div class="search">
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="What do you want to learn?"
+          />
+          <img src="./assets/search-icon.svg" alt="" class="search-icon" />
         </div>
-        <div class="achivement">
-            <h1>"Pure Hardwork, No Shortcuts"</h1>
-            <div class="cards">
-                <div class="card">
-                    <img src="./assets/undraw_road_to_knowledge_m8s0.svg" alt="">
-                    <h3>400+</h3>
-                    <h4>Different Courses</h4>
-                </div>
-                <div class="card">
-                    <img src="./assets/undraw_education_f8ru.svg" alt="">
-                    <h3>400000+</h3>
-                    <h4>Student Enrolled</h4>
-                </div>
-                <div class="card">
-                    <img src="./assets/undraw_around_the_world_re_rb1p.svg" alt="">
-                    <h3>10000+</h3>
-                    <h4>Successful Transition</h4>
-                </div>
+        <div class="drop-down">
+          <div class="courses">
+            Courses <img src="./assets/dropdown.svg" alt="" />
+            <div class="sub-links course-sublink hidden">
+              <a href="#" class="link">Data Science</a>
+              <a href="#" class="link">Big Data</a>
+              <a href="#" class="link">Web Devlopment</a>
+              <a href="#" class="link">Blockchain</a>
+              <a href="#" class="link">Programming</a>
+              <a href="#" class="link">Cloud</a>
             </div>
+          </div>
+          <div class="company">
+            Company <img src="./assets/dropdown.svg" alt="" />
+            <div class="sub-links company-sublink hidden">
+              <a href="#" class="link">About Us</a>
+              <a href="#" class="link">Contact Us</a>
+              <a href="#" class="link">FAQs</a>
+              <a href="#" class="link">Hack-A-Thon</a>
+              <a href="#" class="link">Privacy Policy</a>
+              <a href="#" class="link">Terms and Conditions</a>
+            </div>
+          </div>
+          <div class="programs">
+            Programs <img src="./assets/dropdown.svg" alt="" />
+            <div class="sub-links programs-sublink hidden">
+              <a href="#" class="link">One Neuron</a>
+              <a href="#" class="link">Job Portal</a>
+              <a href="#" class="link">Internship Portal</a>
+              <a href="#" class="link">Become an affiliate</a>
+              <a href="#" class="link">Hall of fame</a>
+              <a href="#" class="link">Blog</a>
+            </div>
+          </div>
         </div>
+        <div class="links">
+          <a href="#" class="link">Sign In</a>
+          <a href="#" class="link">Get Started</a>
+        </div>
+      </nav>
+      <div class="hero-section">
+        <div class="wrapper">
+          <div class="text">
+            <h4>Learn from the best of industry</h4>
+            <h1>
+              Highest in quality, affordable <br />
+              in price
+            </h1>
+            <p>
+              Digital entrepreneurs, Youtubers and content creators provide
+              <br />
+              affordable courses across technologies.
+            </p>
+          </div>
+          <img src="./assets/herosection.jpg" alt="" />
+        </div>
+      </div>
+      <div class="achivement">
+        <h1>"Pure Hardwork, No Shortcuts"</h1>
+        <div class="cards">
+          <div class="card">
+            <img src="./assets/undraw_road_to_knowledge_m8s0.svg" alt="" />
+            <h3>400+</h3>
+            <h4>Different Courses</h4>
+          </div>
+          <div class="card">
+            <img src="./assets/undraw_education_f8ru.svg" alt="" />
+            <h3>400000+</h3>
+            <h4>Student Enrolled</h4>
+          </div>
+          <div class="card">
+            <img src="./assets/undraw_around_the_world_re_rb1p.svg" alt="" />
+            <h3>10000+</h3>
+            <h4>Successful Transition</h4>
+          </div>
+        </div>
+      </div>
+      <div class="company-section">
+        <h1>Our Achiever’s Work with</h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/company/affine.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/company/boeing.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/company/geekyants.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/company/livspace.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/company/mindtree.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/company/odessa.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/company/redbus.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/company/tataiq.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/company/thoughtworks.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/company/wellnesys.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/company/wipro.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/company/zensar.png" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
