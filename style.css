@@ -8,15 +8,35 @@
   transition: 150ms ease-in;
 }
 
-html,
+html {
+  --scrollbarBG: #243c7bcc;
+  --thumbBG: #dd4e27cc;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
 body {
   background-color: #d7d7d7;
   position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
 }
 
 .hidden {
   visibility: hidden;
-  transition: 0;
+  position: absolute;
 }
 
 /*********************** Navbar Section***********************/
@@ -65,6 +85,12 @@ input::placeholder {
   gap: 40px;
   cursor: pointer;
 }
+
+/* .links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+} */
 
 .links a {
   text-decoration: none;
@@ -302,104 +328,141 @@ input::placeholder {
 /*********************** Avengers Section***********************/
 
 .avengers-section {
-    padding: 20px 40px;
-    text-align: center;
+  padding: 20px 40px;
+  text-align: center;
 }
 
 .avengers-section h1 {
-    color: #dd4e27;
-    font-size: 52px;
-    margin: 50px 0 80px 0;
-    font-weight: 600;
+  color: #dd4e27;
+  font-size: 52px;
+  margin: 50px 0 80px 0;
+  font-weight: 600;
 }
 
 .avengers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-    margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
 }
 
 .aven-card {
-    width: 30%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  width: 30%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .aven-card > img {
-    width: 100%;
-    background-image: linear-gradient(to right top, #dd4e2799, #d7d7d799);
-    box-sizing: border-box;
+  width: 100%;
+  background-image: linear-gradient(to right top, #dd4e2799, #d7d7d799);
+  box-sizing: border-box;
 }
 
 .aven-card > .bottom {
-    background-image: linear-gradient(to right top, #d7d7d799, #243c7b99);
-    padding: 20px;
-    width: 100%;
-    margin-top: -5px;
-    display: inline-block;
-    text-align: center;
-    box-sizing: border-box;
+  background-image: linear-gradient(to right top, #d7d7d799, #243c7b99);
+  padding: 20px;
+  width: 100%;
+  margin-top: -5px;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .aven-card > .bottom > h5 {
-    font-size: 26px;
-    font-weight: 600;
-    color: #ffffffcc;
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffffcc;
 }
 
 .aven-card > .bottom > p {
-    font-size: 20px;
-    letter-spacing: 5px;
-    font-weight: 600;
-    color: #dd4e27;
-    margin: 8px 0;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: 600;
+  color: #dd4e27;
+  margin: 8px 0;
 }
 
 .avengers-section > a {
-    border: 2px solid #243c7b;
-    display: inline;
-    padding: 6px 35px;
-    color: #243c7b;
-    text-decoration: none;
-    margin: 20px;
-    width: 100%;
+  border: 2px solid #243c7b;
+  display: inline;
+  padding: 6px 35px;
+  color: #243c7b;
+  text-decoration: none;
+  margin: 20px;
+  width: 100%;
 }
 
 .avengers-section > a:hover {
-    background-color: #dd4e27;
-    color: #ffffff;
-    border-color: #dd4e27;
+  background-color: #dd4e27;
+  color: #ffffff;
+  border-color: #dd4e27;
 }
 
 /*********************** Partners Section***********************/
 
 .partners {
-    padding: 100px 40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 40px;
+  padding: 120px 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
 }
 
 .partners h1 {
-    font-size: 40px;
-    color: #243c7b;
-    font-weight: 600;
+  font-size: 40px;
+  color: #243c7b;
+  font-weight: 600;
 }
 
 .images {
-    display: flex;
-    flex-grow: 1;
-    gap: 10px;
+  display: flex;
+  flex-grow: 1;
+  gap: 10px;
 }
 
 .images img {
-    width: 200%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  width: 200%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    border-radius: 100%;
+  border-radius: 100%;
+}
+
+/*********************** Footer Section***********************/
+
+footer {
+  padding: 50px 40px;
+  background-color: #243c7b;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffffcc;
+}
+
+.foot-images > .social {
+  margin: 10px 0;
+}
+
+.foot-images > img {
+  padding: 10px;
+}
+
+.add {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.foot-flex {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.contact img {
+  margin-right: 10px;
+}
+
+.bold {
+  font-weight: 600;
 }
