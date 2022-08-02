@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb {
 /*********************** Navbar Section***********************/
 
 .navbar {
-  padding: 20px 40px;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -82,9 +82,19 @@ input::placeholder {
 
 .drop-down {
   display: flex;
-  align-self: flex-start;
   gap: 40px;
   cursor: pointer;
+}
+
+.drop-down img {
+  padding-bottom: 13px;
+}
+
+.courses, .company, .programs {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  box-sizing: border-box;
 }
 
 .links {
