@@ -366,6 +366,11 @@ input::placeholder {
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
+.aven-card:hover{
+  transition: .5s ease-in;
+  transform: scale(1.04);
+}
+
 .aven-card > img {
   width: 100%;
   background-image: linear-gradient(to right top, #dd4e2799, #d7d7d799);
