@@ -10,6 +10,7 @@
 html {
   --scrollbarBG: #243c7bcc;
   --thumbBG: #dd4e27cc;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -44,6 +45,7 @@ body::-webkit-scrollbar-thumb {
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   align-items: center;
   color: #243c7b;
   box-sizing: border-box;
