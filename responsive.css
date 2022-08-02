@@ -1,0 +1,12 @@
+
+@media screen and (max-width: 1200px) {
+    .desktop-nav {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .mob-navbar {
+        visibility: visible;
+        position: relative;
+    }
+  }
