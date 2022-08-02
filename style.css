@@ -86,16 +86,15 @@ input::placeholder {
   cursor: pointer;
 }
 
-/* .links {
+.links {
     display: flex;
     align-items: center;
     gap: 25px;
-} */
+}
 
 .links a {
   text-decoration: none;
   color: #243c7b;
-  margin-left: 20px;
 }
 
 .links > a + a {
