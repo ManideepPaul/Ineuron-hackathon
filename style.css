@@ -5,7 +5,6 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  transition: 150ms ease-in;
 }
 
 html {
@@ -87,9 +86,9 @@ input::placeholder {
 }
 
 .links {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .links a {
@@ -106,6 +105,7 @@ input::placeholder {
   background-color: #dd4e27;
   color: #ffffff;
   border-color: #dd4e27;
+  transition: 200ms ease-in;
 }
 
 .sub-links {
@@ -322,6 +322,7 @@ input::placeholder {
 .learn-bottom .tab > img:hover {
   background-color: #dd4e27;
   color: #ffffff;
+  transition: 200ms ease-in;
 }
 
 /*********************** Avengers Section***********************/
@@ -397,6 +398,7 @@ input::placeholder {
   background-color: #dd4e27;
   color: #ffffff;
   border-color: #dd4e27;
+  transition: 200ms ease-in;
 }
 
 /*********************** Partners Section***********************/
