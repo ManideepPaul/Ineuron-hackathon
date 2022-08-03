@@ -172,6 +172,11 @@ input::placeholder {
         padding-right: 5px;
       }
 
+      .user {
+        visibility: hidden;
+        position: absolute;
+      }
+
 
 /*********************** Hero Section***********************/
 
