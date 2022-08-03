@@ -90,6 +90,8 @@ input::placeholder {
   padding-bottom: 13px;
 }
 
+
+
 .courses, .company, .programs {
   display: flex;
   align-items: center;
@@ -124,10 +126,8 @@ input::placeholder {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
   position: absolute;
   background-color: #d7d7d7;
-  padding: 10px;
   border-radius: 2px;
   top: 10vh;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -135,8 +135,14 @@ input::placeholder {
 }
 
 .sub-links a {
+  padding: 10px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
+}
+
+.sub-links a:hover {
+  background-color: #243c7bcc;
+  transition: 150ms ease-in;
 }
 
 /*********************** Hero Section***********************/
