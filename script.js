@@ -1,6 +1,8 @@
 const courses = document.querySelector('.courses');
 const company = document.querySelector('.company');
 const programs = document.querySelector('.programs');
+const ham = document.querySelector('.ham');
+const mobNav = document.querySelector('.mob-sub-links');
 const coursesSublink = document.querySelector('.course-sublink');
 const companySublink = document.querySelector('.company-sublink');
 const programsSublink = document.querySelector('.programs-sublink');
@@ -19,6 +21,10 @@ company.addEventListener('mouseover', () => dropDownRem(companySublink))
 company.addEventListener('mouseout', () => dropDownAdd(companySublink))
 programs.addEventListener('mouseover', () => dropDownRem(programsSublink))
 programs.addEventListener('mouseout', () => dropDownAdd(programsSublink))
+
+ham.addEventListener('click', () => {
+    mobNav.classList.toggle('hidden')
+})
 
 // Swiper JS 
 

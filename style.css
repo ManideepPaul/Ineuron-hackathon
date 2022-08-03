@@ -90,8 +90,6 @@ input::placeholder {
   padding-bottom: 13px;
 }
 
-
-
 .courses, .company, .programs {
   display: flex;
   align-items: center;
@@ -127,7 +125,6 @@ input::placeholder {
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  background-color: #d7d7d7;
   border-radius: 2px;
   top: 10vh;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -137,13 +134,44 @@ input::placeholder {
 .sub-links a {
   padding: 10px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.9);
+  color: #ffffffee;
 }
 
 .sub-links a:hover {
   background-color: #243c7bcc;
   transition: 150ms ease-in;
 }
+
+      /********************** Mob-nav-bar ********************/
+      .ham {
+        cursor: pointer;
+      }
+      .mob-sub-links {
+        display: flex;
+        flex-direction: column;
+        background-color: #dd4e27;
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      }
+
+      .mob-sub-links a {
+        padding: 10px 20px;
+        color: #ffffffee;
+      }
+
+      .mob-sub-links a:hover {
+        background-color: #243c7bcc;
+        transition: 150ms ease-in;
+      }
+
+      .mob-sub-links a > span {
+        font-weight: 900;
+        padding-right: 5px;
+      }
+
 
 /*********************** Hero Section***********************/
 
@@ -335,6 +363,7 @@ input::placeholder {
   background-color: #dd4e27bb;
   clip-path: polygon(23% 15%, 100% 15%, 75% 85%, 0 85%);
   position: relative;
+  cursor: pointer;
 }
 
 .learn-bottom .tab > img:hover {
